@@ -22,5 +22,5 @@
 
 - Core - React, TypeScript
 - Styling - Emotion
-- Testing - Storybook / Cypress
+- Testing - Storybook / Jest / Playwright
 - Bundling - Rollup
