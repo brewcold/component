@@ -1,12 +1,11 @@
 import { css } from "@emotion/react"
-import { memo } from "react"
 
 export interface SpacingProps {
   size: string
   dir?: "v" | "h"
 }
 
-export const Spacing = memo(({ size, dir = "v" }: SpacingProps) => {
+export const Spacing = ({ size, dir = "v" }: SpacingProps) => {
   if (dir === "v")
     return (
       <div
@@ -22,4 +21,4 @@ export const Spacing = memo(({ size, dir = "v" }: SpacingProps) => {
       `}
     />
   )
-})
+}
