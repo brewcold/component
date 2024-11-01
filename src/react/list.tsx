@@ -1,4 +1,4 @@
-import { forwardRef, type ComponentPropsWithRef, type ElementType, type Ref } from "react"
+import { forwardRef, memo, type ComponentPropsWithRef, type ElementType, type Ref } from "react"
 
 type ListProps<T extends ElementType> = {
   as?: T
@@ -14,4 +14,4 @@ function Component<T extends ElementType>({ as, ...props }: ListProps<T>, ref: R
   )
 }
 
-export const List = forwardRef(Component)
+export const List = memo(forwardRef(Component))
