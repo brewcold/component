@@ -1,6 +1,6 @@
 import { forwardRef, type ComponentPropsWithRef, type ElementType, type Ref } from "react"
 
-type BtnProps<T extends ElementType> = {
+export type BtnProps<T extends ElementType> = {
   as?: T
 } & ComponentPropsWithRef<T>
 
