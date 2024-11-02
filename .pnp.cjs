@@ -49,6 +49,7 @@ const RAW_RUNTIME_STATE =
           ["@storybook/react", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.3.4"],\
           ["@storybook/react-vite", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.3.4"],\
           ["@storybook/test", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.3.4"],\
+          ["@syyu/util", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:1.3.9"],\
           ["@types/babel__core", "npm:7.20.5"],\
           ["@types/babel__preset-env", "npm:7.9.7"],\
           ["@types/react", "npm:18.3.10"],\
@@ -4585,6 +4586,7 @@ const RAW_RUNTIME_STATE =
           ["@storybook/react", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.3.4"],\
           ["@storybook/react-vite", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.3.4"],\
           ["@storybook/test", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.3.4"],\
+          ["@syyu/util", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:1.3.9"],\
           ["@types/babel__core", "npm:7.20.5"],\
           ["@types/babel__preset-env", "npm:7.9.7"],\
           ["@types/react", "npm:18.3.10"],\
@@ -4607,6 +4609,28 @@ const RAW_RUNTIME_STATE =
           ["typescript-eslint", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:8.8.0"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@syyu/util", [\
+      ["npm:1.3.9", {\
+        "packageLocation": "./.yarn/cache/@syyu-util-npm-1.3.9-58eae1b13a-16c05964fd.zip/node_modules/@syyu/util/",\
+        "packageDependencies": [\
+          ["@syyu/util", "npm:1.3.9"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:1.3.9", {\
+        "packageLocation": "./.yarn/__virtual__/@syyu-util-virtual-7f9ec3cba8/0/cache/@syyu-util-npm-1.3.9-58eae1b13a-16c05964fd.zip/node_modules/@syyu/util/",\
+        "packageDependencies": [\
+          ["@syyu/util", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:1.3.9"],\
+          ["@types/react", "npm:18.3.10"],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@testing-library/dom", [\
