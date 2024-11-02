@@ -1,4 +1,4 @@
-import { createUseFormContext, useForm, UseForm, UseFormArgs } from "@syyu/util/react"
+import { createUseFormContext, useForm, UseFormArgs } from "@syyu/util/react"
 import { Form } from "../form"
 import { ComponentPropsWithoutRef, ComponentPropsWithRef, ElementType, forwardRef, Ref, useContext } from "react"
 import { Input } from "../input"
@@ -7,9 +7,9 @@ import { Label } from "../label"
 
 export const BindedFormContext = createUseFormContext<Record<string, any>>()
 
-interface BindedFormProps<T extends Record<string, any>> extends ComponentPropsWithoutRef<"form"> {
+type BindedFormProps<T extends Record<string, any>> = ComponentPropsWithoutRef<"form"> & {
   initialValues: T
-  onSubmit: () => void
+  onSubmit: (data: T) => void
   validator?: (data: T) => boolean
 }
 
@@ -17,7 +17,6 @@ export function BindedForm<T extends Record<string, any>>({
   initialValues,
   onSubmit,
   validator,
-
   ...props
 }: BindedFormProps<T>) {
   const useFormConfig: UseFormArgs<T> = { initialValues, onSubmit, validator }
