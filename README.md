@@ -26,7 +26,7 @@ const handleSubmit = ({id, password}) => {
 
 <BindedForm initialValues={ id: '', password: '' } onSubmit={handleSubmit}>
   <BindedForm.Input name='id' />
-  <BindedForm.Input password='password' />
+  <BindedForm.Input name='password' />
   <BindedForm.Button type="submit">SUBMIT</BindedForm.Button>
 <BindedForm>
 ```
