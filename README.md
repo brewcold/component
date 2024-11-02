@@ -10,7 +10,7 @@
 - Button (`<button>`)
 - Flex
 - Form (`<form>`) / Binded Form (form, input, label, button)
-- Input (`<input>`)
+- Input (`<input>`) / TextArea ('`<textarea>`')
 - Label (`<label>`)
 - List (`<ul>`, `<ol>`, `<li>`, ...)
 - Spacing (`<div>`, ...)

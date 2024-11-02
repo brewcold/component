@@ -4,6 +4,7 @@ import { ComponentPropsWithoutRef, ComponentPropsWithRef, ElementType, forwardRe
 import { Input } from "../input"
 import { Btn, BtnProps } from "../button"
 import { Label } from "../label"
+import { TextArea } from "../textarea"
 
 export const BindedFormContext = createUseFormContext<Record<string, any>>()
 
@@ -43,6 +44,19 @@ BindedForm.Input = forwardRef(
 
     const value = CTX?.values?.[name] || ""
     return <Input value={value} onChange={CTX?.handleChange || (() => {})} ref={ref} {...props} />
+  }
+)
+
+BindedForm.TextArea = forwardRef(
+  ({ name, ...props }: { name: string } & ComponentPropsWithRef<"textarea">, ref: Ref<HTMLTextAreaElement>) => {
+    const CTX = useContext(BindedFormContext)
+
+    const value = CTX?.values?.[name] || ""
+    return (
+      <TextArea value={value} onChange={CTX?.handleChange || (() => {})} ref={ref} {...props}>
+        {props.children}
+      </TextArea>
+    )
   }
 )
 
