@@ -9,14 +9,27 @@
 
 - Button (`<button>`)
 - Flex
-- Form (`<form>`)
-- Grid
+- Form (`<form>`) / Binded Form (form, input, label, button)
 - Input (`<input>`)
 - Label (`<label>`)
 - List (`<ul>`, `<ol>`, `<li>`, ...)
 - Spacing (`<div>`, ...)
 - Txt (`<hn>`, `<span>`, `<p>`, ...)
 - View (`<div>`, ...)
+
+### BindedForm - Example
+
+```
+const handleSubmit = ({id, password}) => {
+  //fetch
+}
+
+<BindedForm initialValues={ id: '', password: '' } onSubmit={handleSubmit}>
+  <BindedForm.Input name='id' />
+  <BindedForm.Input password='id' />
+  <BindedForm.Button type="submit">SUBMIT</BindedForm.Button>
+<BindedForm>
+```
 
 ## Tech Stack 기술 스택
 
