@@ -1,7 +1,8 @@
 import { css } from "@emotion/react"
-import { type ComponentPropsWithRef, forwardRef, memo, Ref } from "react"
+import { type ComponentPropsWithRef, type ElementType, forwardRef, memo, Ref } from "react"
 
-interface FlexProps extends ComponentPropsWithRef<"div"> {
+type FlexProps<T extends ElementType> = ComponentPropsWithRef<ElementType> & {
+  as?: T
   display?: "flex" | "inline-flex"
   flexDirection?: "row" | "column"
   flexWrap?: "wrap" | "nowrap" | "wrap-reverse"
@@ -22,8 +23,9 @@ interface FlexProps extends ComponentPropsWithRef<"div"> {
   flex?: string
 }
 
-function Component(
+function Component<T extends ElementType>(
   {
+    as,
     display,
     flexDirection,
     flexWrap,
@@ -35,11 +37,12 @@ function Component(
     flexBasis,
     flex,
     ...props
-  }: FlexProps,
+  }: FlexProps<T>,
   ref: Ref<HTMLDivElement>
 ) {
+  const Comp = as || "div"
   return (
-    <div
+    <Comp
       css={css`
         display: ${display === "inline-flex" ? "inline-flex" : "flex"};
         flex: ${flex || 1};
@@ -54,7 +57,9 @@ function Component(
       `}
       {...props}
       ref={ref}
-    />
+    >
+      {props.children}
+    </Comp>
   )
 }
 
