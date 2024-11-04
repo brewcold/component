@@ -10,17 +10,17 @@ export const BindedFormContext = createUseFormContext<Record<string, any>>()
 
 type BindedFormProps<T extends Record<string, any>> = ComponentPropsWithoutRef<"form"> & {
   initialValues: T
-  onSubmit: (data: T) => void
+  onFormSubmit: (data: T) => void
   validator?: (data: T) => boolean
 }
 
-export function BindedForm<T extends Record<string, any>>({
+export const BindedForm = <T extends Record<string, any>>({
   initialValues,
-  onSubmit,
+  onFormSubmit,
   validator,
   ...props
-}: BindedFormProps<T>) {
-  const useFormConfig: UseFormArgs<T> = { initialValues, onSubmit, validator }
+}: BindedFormProps<T>) => {
+  const useFormConfig: UseFormArgs<T> = { initialValues, onSubmit: onFormSubmit, validator }
 
   const { values, submit, handleChange, refs } = useForm<T>(useFormConfig)
 
@@ -31,6 +31,7 @@ export function BindedForm<T extends Record<string, any>>({
           e.preventDefault()
           submit()
         }}
+        {...props}
       >
         {props.children}
       </Form>
