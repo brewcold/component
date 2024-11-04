@@ -4469,14 +4469,14 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@swc/core", [\
       ["npm:1.8.0", {\
-        "packageLocation": "./.yarn/cache/@swc-core-npm-1.8.0-572a3a8bd7-a117e13b01.zip/node_modules/@swc/core/",\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-dee306131c/node_modules/@swc/core/",\
         "packageDependencies": [\
           ["@swc/core", "npm:1.8.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
       ["virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:1.8.0", {\
-        "packageLocation": "./.yarn/__virtual__/@swc-core-virtual-dee306131c/0/cache/@swc-core-npm-1.8.0-572a3a8bd7-a117e13b01.zip/node_modules/@swc/core/",\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-dee306131c/node_modules/@swc/core/",\
         "packageDependencies": [\
           ["@swc/core", "virtual:2995a95f1a8fc803e7cbd3b9bd8535afcdd75556843e038d505d605c15e1fc70dc5948cab25c8e5e2223c3942cc2e8618185ff6a5c2fd4ce8bfe63dd1bb10d89#npm:1.8.0"],\
           ["@swc/core-darwin-arm64", "npm:1.8.0"],\

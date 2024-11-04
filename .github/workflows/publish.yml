@@ -18,8 +18,8 @@ jobs:
           node-version: "20"
           registry-url: "https://registry.npmjs.org/"
 
-      - name: Install package manager
-        run: npm install -g yarn
+      - name: Install Deps (Yarn Zero-Install)
+        run: yarn install --immutable
 
       - name: Test & Build
         run: yarn build
