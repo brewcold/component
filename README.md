@@ -1,10 +1,10 @@
 # @syyu/components
 
-## Basic React Component System 베이직 리액트 컴포넌트 시스템
+## Basic React Component System
 
 [https://www.npmjs.com/package/@syyu/component](https://www.npmjs.com/package/@syyu/component)
 
-- Boilerplate Components exclude Styling 스타일링을 제외한 기본 컴포넌트 보일러플레이트
+- Boilerplate Components exclude Styling
 - [About(KOR)](https://www.brewcoldblue.com/engineering/boilerplate-react-component-system)
 
 ## API_Components
@@ -26,14 +26,14 @@ const handleSubmit = ({id, password}) => {
   //fetch
 }
 
-<BindedForm initialValues={ id: '', password: '' } onSubmit={handleSubmit}>
+<BindedForm initialValues={{ id: '', password: '' }} onFormSubmit={handleSubmit}>
   <BindedForm.Input name='id' />
   <BindedForm.Input name='password' />
-  <BindedForm.Button type="submit">SUBMIT</BindedForm.Button>
+  <BindedForm.Button>SUBMIT</BindedForm.Button>
 <BindedForm>
 ```
 
-## Tech Stack 기술 스택
+## Tech Stack
 
 - Core - React, TypeScript
 - Styling - Emotion
