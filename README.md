@@ -7,30 +7,44 @@
 - Boilerplate Components exclude Styling
 - [About(KOR)](https://www.brewcoldblue.com/engineering/boilerplate-react-component-system)
 
-## API_Components
+## API
 
-- Button (`<button>`)
-- Flex
-- Form (`<form>`) / Binded Form (form, input, label, button)
-- Input (`<input>`) / TextArea ('`<textarea>`')
-- Label (`<label>`)
-- List (`<ul>`, `<ol>`, `<li>`, ...)
-- Spacing (`<div>`, ...)
-- Txt (`<hn>`, `<span>`, `<p>`, ...)
-- View (`<div>`, ...)
+`*`: polymorphic - can be rendered as specific markup by "as" prop
 
-### BindedForm - Example
+- Bc.Button\* (`<button>`)
+- Bc.Flex\*
+- Bc.Form (`<form>`)
+- Bc.BindedForm (form, input, label, button) + Bc.BindedFormContext
+- Bc.Input (`<input>`) / Bc.TextArea ('`<textarea>`')
+- Bc.Label (`<label>`)
+- Bc.List\* (`<ul>`, `<ol>`, `<li>`, ...)
+- Bc.Spacing (`<div>`, ...)
+- Bc.Txt\* (`<hn>`, `<span>`, `<p>`, ...)
+- Bc.View\* (`<div>`, ...)
+
+### Example
+
+`<Bc.Txt as="p">...</Bc.Txt>`
+`<Bc.Spacing dir="h" size="3rem" />`
+`<Bc.Flex flexDirection="row" flexWrap=...>...</Bc.Flex>`
+
+### Example: BindedForm
 
 ```
+...
 const handleSubmit = ({id, password}) => {
-  //fetch
+  //do something with form data
 }
+const { values, setValues, ... } = useContext(Bc.BindedFormContext)
+//see [useForm API](https://github.com/brewcold/util/blob/main/react/src/use-form/README.md) to control form data precisely
 
-<BindedForm initialValues={{ id: '', password: '' }} onFormSubmit={handleSubmit}>
-  <BindedForm.Input name='id' />
-  <BindedForm.Input name='password' />
-  <BindedForm.Button>SUBMIT</BindedForm.Button>
-<BindedForm>
+return (<Bc.BindedForm initialValues={{ id: '', password: '' }} onFormSubmit={handleSubmit}>
+  <Bc.BindedForm.Input name='id' />
+  <Bc.BindedForm.Input name='password' />
+  <Bc.BindedForm.Button>SUBMIT</BindedForm.Button>
+<Bc.BindedForm>)
+...
+
 ```
 
 ## Tech Stack

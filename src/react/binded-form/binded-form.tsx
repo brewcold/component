@@ -6,7 +6,7 @@ import { Btn, BtnProps } from "../button"
 import { Label } from "../label"
 import { TextArea } from "../textarea"
 
-export const BindedFormContext = createUseFormContext<Record<string, any>>()
+export const BindedFormContext = createUseFormContext<Record<keyof any, any>>()
 
 type BindedFormProps<T extends Record<string, any>> = ComponentPropsWithoutRef<"form"> & {
   initialValues: T
@@ -22,10 +22,10 @@ export const BindedForm = <T extends Record<string, any>>({
 }: BindedFormProps<T>) => {
   const useFormConfig: UseFormArgs<T> = { initialValues, onSubmit: onFormSubmit, validator }
 
-  const { values, submit, handleChange, refs } = useForm<T>(useFormConfig)
+  const { values, setValues, submit, handleChange, refs } = useForm<T>(useFormConfig)
 
   return (
-    <BindedFormContext.Provider value={{ values, submit, handleChange, refs }}>
+    <BindedFormContext.Provider value={{ values, setValues, submit, handleChange, refs }}>
       <Form
         onSubmit={e => {
           e.preventDefault()
