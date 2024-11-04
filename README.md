@@ -2,10 +2,14 @@
 
 ## Basic React Component System
 
+Boilerplate components exclude styling
+
+`npm install @syyu/components`
+`yarn add @syyu/components`
+
 [https://www.npmjs.com/package/@syyu/component](https://www.npmjs.com/package/@syyu/component)
 
-- Boilerplate Components exclude Styling
-- [About(KOR)](https://www.brewcoldblue.com/engineering/boilerplate-react-component-system)
+[About(KOR)](https://www.brewcoldblue.com/engineering/boilerplate-react-component-system)
 
 ## API
 
@@ -24,19 +28,22 @@
 
 ### Example
 
-`<Bc.Txt as="p">...</Bc.Txt>`
-`<Bc.Spacing dir="h" size="3rem" />`
-`<Bc.Flex flexDirection="row" flexWrap=...>...</Bc.Flex>`
+```
+<Bc.Txt as="p">...</Bc.Txt>
+<Bc.Spacing dir="h" size="3rem" />
+<Bc.Flex flexDirection="row" flexWrap=...>...</Bc.Flex>
+```
 
 ### Example: BindedForm
+
+`**` [useForm API](https://github.com/brewcold/util/blob/main/react/src/use-form/README.md)
 
 ```
 ...
 const handleSubmit = ({id, password}) => {
   //do something with form data
 }
-const { values, setValues, ... } = useContext(Bc.BindedFormContext)
-//see [useForm API](https://github.com/brewcold/util/blob/main/react/src/use-form/README.md) to control form data precisely
+const { values, setValues, ... } = useContext(Bc.BindedFormContext) //see useForm API** to control form data precisely
 
 return (<Bc.BindedForm initialValues={{ id: '', password: '' }} onFormSubmit={handleSubmit}>
   <Bc.BindedForm.Input name='id' />
