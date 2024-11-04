@@ -35,5 +35,5 @@ const handleSubmit = ({id, password}) => {
 
 - Core - React, TypeScript
 - Styling - Emotion
-- Testing - Storybook / Jest / Playwright
+- Testing - Jest
 - Bundling - Rollup
