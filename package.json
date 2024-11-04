@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "yarn dlx jest && rollup --config",
-    "test": "yarn dlx jest --watchAll --verbose"
+    "test": "yarn dlx jest --watchAll --verbose",
+    "publish": "npm publish"
   },
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
