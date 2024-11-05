@@ -5,6 +5,7 @@
 Boilerplate components exclude styling
 
 `npm install @syyu/component`
+
 `yarn add @syyu/component`
 
 [https://www.npmjs.com/package/@syyu/component](https://www.npmjs.com/package/@syyu/component)
@@ -29,6 +30,8 @@ Boilerplate components exclude styling
 ### Example
 
 ```
+import { Bc } from '@syyu/component'
+
 <Bc.Txt as="p">...</Bc.Txt>
 <Bc.Spacing dir="h" size="3rem" />
 <Bc.Flex flexDirection="row" flexWrap=...>...</Bc.Flex>
@@ -40,6 +43,9 @@ Boilerplate components exclude styling
 
 ```
 ...
+import { Bc } from '@syyu/component'
+...
+
 const handleSubmit = ({id, password}) => {
   //do something with form data
 }
