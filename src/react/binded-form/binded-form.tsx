@@ -44,7 +44,7 @@ BindedForm.Input = forwardRef(
     const CTX = useContext(BindedFormContext)
 
     const value = CTX?.values?.[name] || ""
-    return <Input value={value} onChange={CTX?.handleChange || (() => {})} ref={ref} {...props} />
+    return <Input value={value} name={name} onChange={CTX?.handleChange || (() => {})} ref={ref} {...props} />
   }
 )
 
@@ -54,7 +54,7 @@ BindedForm.TextArea = forwardRef(
 
     const value = CTX?.values?.[name] || ""
     return (
-      <TextArea value={value} onChange={CTX?.handleChange || (() => {})} ref={ref} {...props}>
+      <TextArea value={value} name={name} onChange={CTX?.handleChange || (() => {})} ref={ref} {...props}>
         {props.children}
       </TextArea>
     )
