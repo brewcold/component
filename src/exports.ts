@@ -4,18 +4,13 @@ import { Flex } from "./react/flex"
 import { Form } from "./react/form"
 import { Input } from "./react/input"
 import { Label } from "./react/label"
-// import { Flex } from "./react/flex"
-// import { Form } from "./react/form"
-// import { Grid } from "./react/grid"
-// import {} from "./react/input"
-// import {} from "./react/label"
 import { List } from "./react/list"
 import { Spacing } from "./react/spacing"
 import { TextArea } from "./react/textarea"
 import { Txt } from "./react/txt"
 import { View } from "./react/view"
 
-const Bc = {
+export const Bc = {
   BindedForm,
   BindedFormContext,
   Btn,
@@ -29,5 +24,17 @@ const Bc = {
   Txt,
   View,
 }
-
-export default Bc
+export interface BcTypes {
+  BindedForm: typeof BindedForm
+  BindedFormContext: typeof BindedFormContext
+  Btn: typeof Btn
+  Flex: typeof Flex
+  Form: typeof Form
+  Input: typeof Input
+  Label: typeof Label
+  List: typeof List
+  Spacing: typeof Spacing
+  TextArea: typeof TextArea
+  Txt: typeof Txt
+  View: typeof View
+}
