@@ -1,6 +1,6 @@
 import { type ComponentPropsWithRef, forwardRef, memo, type Ref } from "react"
 
-interface FormProps extends ComponentPropsWithRef<"form"> {}
+export interface FormProps extends ComponentPropsWithRef<"form"> {}
 
 function Component({ ...props }: FormProps, ref: Ref<HTMLFormElement>) {
   return (

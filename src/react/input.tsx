@@ -1,6 +1,6 @@
 import { forwardRef, type ComponentPropsWithRef, type Ref } from "react"
 
-interface InputProps extends ComponentPropsWithRef<"input"> {}
+export interface InputProps extends ComponentPropsWithRef<"input"> {}
 
 function Component({ ...props }: InputProps, ref: Ref<HTMLInputElement>) {
   return (

@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import { forwardRef, type ComponentPropsWithRef, type Ref } from "react"
 
-interface TextAreaProps extends ComponentPropsWithRef<"textarea"> {}
+export interface TextAreaProps extends ComponentPropsWithRef<"textarea"> {}
 
 function Component({ ...props }: TextAreaProps, ref: Ref<HTMLTextAreaElement>) {
   return (

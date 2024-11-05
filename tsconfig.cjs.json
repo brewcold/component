@@ -2,6 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/cjs",
     "rootDir": "./",
+    "declaration": true,
     "incremental": true /* Save .tsbuildinfo files to allow for incremental compilation of projects. */,
     "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     /* Specify a set of bundled library declaration files that describe the target runtime environment. */

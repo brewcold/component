@@ -1,6 +1,6 @@
 import { forwardRef, type ComponentPropsWithRef, type Ref } from "react"
 
-interface LabelProps extends ComponentPropsWithRef<"label"> {}
+export interface LabelProps extends ComponentPropsWithRef<"label"> {}
 
 function Component({ ...props }: LabelProps, ref: Ref<HTMLLabelElement>) {
   return (
