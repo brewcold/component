@@ -1,11 +1,11 @@
-# @syyu/components
+# @syyu/component
 
 ## Basic React Component System
 
 Boilerplate components exclude styling
 
-`npm install @syyu/components`
-`yarn add @syyu/components`
+`npm install @syyu/component`
+`yarn add @syyu/component`
 
 [https://www.npmjs.com/package/@syyu/component](https://www.npmjs.com/package/@syyu/component)
 

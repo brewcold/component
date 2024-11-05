@@ -1,6 +1,6 @@
 {
   "name": "@syyu/component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "basic react component system for boilerplate",
   "keywords": [
     "component",
@@ -14,7 +14,7 @@
   },
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "repository": "git@github.com:brewcold/components.git",
+  "repository": "git@github.com:brewcold/component.git",
   "author": "brewcold <seung.yoon.yu@gmail.com>",
   "license": "MIT",
   "packageManager": "yarn@4.5.0",
