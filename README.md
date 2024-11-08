@@ -2,7 +2,7 @@
 
 ## Basic React Component System
 
-Boilerplate components exclude styling
+Boilerplate React Components with Types
 
 `npm install @syyu/component`
 
@@ -32,9 +32,11 @@ Boilerplate components exclude styling
 ```
 import { Bc } from '@syyu/component'
 
-<Bc.Txt as="p">...</Bc.Txt>
-<Bc.Spacing dir="h" size="3rem" />
-<Bc.Flex flexDirection="row" flexWrap=...>...</Bc.Flex>
+...
+  <Bc.Txt as="p">...</Bc.Txt>
+  <Bc.Spacing dir="h" size="3rem" />
+  <Bc.Flex flexDirection="row" flexWrap=...>...</Bc.Flex>
+...
 ```
 
 ### Example: BindedForm
@@ -49,13 +51,17 @@ import { Bc } from '@syyu/component'
 const handleSubmit = ({id, password}) => {
   //do something with form data
 }
-const { values, setValues, ... } = useContext(Bc.BindedFormContext) //see useForm API** to control form data precisely
+const { values, setValues, ... } = useContext(Bc.BindedFormContext)
+  //see useForm API** to control form data precisely
 
-return (<Bc.BindedForm initialValues={{ id: '', password: '' }} onFormSubmit={handleSubmit}>
-  <Bc.BindedForm.Input name='id' />
-  <Bc.BindedForm.Input name='password' />
-  <Bc.BindedForm.Button>SUBMIT</BindedForm.Button>
-<Bc.BindedForm>)
+  //match key with name
+return (
+  <Bc.BindedForm initialValues={{ id: '', password: '' }} onFormSubmit={handleSubmit}>
+    <Bc.BindedForm.Input name='id' />
+    <Bc.BindedForm.Input name='password' />
+    <Bc.BindedForm.Button>SUBMIT</BindedForm.Button>
+  <Bc.BindedForm>
+)
 ...
 
 ```
