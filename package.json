@@ -1,6 +1,6 @@
 {
   "name": "@syyu/component",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "basic react component system for boilerplate",
   "keywords": [
     "component",
