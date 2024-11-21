@@ -2,7 +2,7 @@
 
 ## Basic React Component System
 
-Boilerplate React Components with Types
+Boilerplate React Components with Types (works smoothly with emotion/css)
 
 `npm install @syyu/component`
 
